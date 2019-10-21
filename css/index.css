@@ -163,6 +163,7 @@ p {
 }
 .container {
   width: 100vw;
+  height: 100vh;
 }
 hr {
   width: 80%;
@@ -173,19 +174,22 @@ hr {
   flex-direction: 'direction';
   align-items: center;
   justify-content: center;
+  border-bottom: 2px solid #233536;
+  margin-bottom: 4%;
 }
 .headBox .headImg img {
   display: none;
 }
 .headBox .navBar {
   padding: 1rem;
-  width: 50%;
+  width: 80vw;
   display: flex;
   justify-content: center;
+  padding-bottom: 0%;
 }
 .headBox .navBar nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 .headBox .navBar a {
@@ -202,10 +206,12 @@ hr {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: fit-content;
   padding: 0 12%;
 }
 .home .mainContent img {
   max-width: 100%;
+  margin-top: -3%;
   margin-left: -8%;
 }
 .home .textContent {
@@ -216,4 +222,10 @@ hr {
 .home .textContent h1 {
   font-family: 'Advent Pro', sans-serif;
   text-align: center;
+  color: #233536;
+}
+footer {
+  display: flex;
+  align-content: center;
+  margin: 5%;
 }
