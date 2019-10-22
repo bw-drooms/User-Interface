@@ -3,10 +3,12 @@
   align-items: center;
   justify-content: center;
   background-color: #233536;
-  padding-bottom: 1%;
+  padding:1%;
 
   .headImg img{
-    display:none;
+    //display:none;
+      display:flex;
+      height:40px;
 
     @media @tablet{
       display:flex;
@@ -16,10 +18,14 @@
 
   .navBar{
     padding: 1rem;
-    width: 95vw;
+    width: 75vw;
     display: flex;
     justify-content: center;
     padding-bottom: 0%;
+
+    @media @tablet{
+      width:95vw;
+    }
 
     nav{
       display: flex;

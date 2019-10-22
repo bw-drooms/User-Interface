@@ -11,56 +11,104 @@
   display:flex;
   flex-direction:column;
   align-items: center;
-  
-    .aboutBox{
-      display:flex;
-      flex-direction:column;
-      align-items: center;
-      margin-bottom: 5rem;
-      background-color:@darkBlue;
-      color:@teal;
-      padding: 2rem;
-      border-radius: 5rem;
 
-      hr{
-        border-color:@teal;
-      }
+  @media @tablet{
+    margin-top: 5rem;
+  }//close tablet aboutBottom
 
-      .imgBox{
-        height:fit-content;
-        width:auto;
-        margin-bottom: 1rem;
+  @media @desktop{
+    flex-direction:row;
+  }
 
-        img{
-          height:14rem;
-          border-radius: 50%;
-        }//close img
-      }//close imgBox
-
-      .bottomText{
+    .doubleBox{
+      @media @tablet{
         display:flex;
-        flex-direction: column;
-        align-items:center;
-        margin-top: 8%;
+        flex-direction:row;
+      }//close tablet doubleBox
 
-        hr{
-          margin-top: -3%
-        }
-      }
-
-      p{
-        text-align: center;
-        width: 81%;
+      .aboutBox{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        margin-bottom: 5rem;
+        background-color:@darkBlue;
         color:@teal;
-      }
+        padding: 2rem;
+        border-radius: 5rem;
 
-      .aboutIcons{
-        width:60%;
-        height:fit-content;
-        display:flex;
-        justify-content: space-around;
-        margin-top: 5%;
+        @media @tablet{
+          margin: 0 1rem 5rem;
+        }//close tablet aboutBox
 
-      }
-  }//close aboutBox
+        @media @desktop{
+          margin: 0 1% 0rem;
+        }
+
+        h1{
+          text-align: center;
+          font-size: 3.5rem;
+        }
+  
+        hr{
+          border-color:@teal;
+        }//close hr
+  
+        .imgBox{
+          height:fit-content;
+          width:auto;
+          margin-bottom: 1rem;
+  
+          img{
+            height:14rem;
+            border-radius: 50%;
+
+            @media @desktop{
+              height: 11rem;
+            }
+          }//close img
+        }//close imgBox
+  
+        .bottomText{
+          display:flex;
+          flex-direction: column;
+          align-items:center;
+          margin-top: 8%;
+  
+          @media @tablet{
+            margin-top: 3%;
+          }//close tablet bottomText
+  
+          hr{
+            margin-top: -3%;
+  
+            @media @tablet{
+              margin-top: 0;
+            }//close tablet hr
+          }//close hr
+        }//close bottomText
+  
+        p{
+          text-align: center;
+          width: 81%;
+          color:@teal;
+        }//close p
+  
+        .aboutIcons{
+          width:60%;
+          height:fit-content;
+          display:flex;
+          justify-content: space-around;
+          margin-top: 5%;
+
+          @media @desktop{
+            width: 100%;
+          }//close desktop aboutIcons
+          @media @desktopTwo{
+            width: 70%;
+          }
+        }//close aboutIcons
+      }//close aboutBox
+    }//close doubleBox
+  
+  
 }//close aboutBottom
