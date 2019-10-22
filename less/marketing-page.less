@@ -1,3 +1,163 @@
 .home{
-  
+  background-color:@teal;
+
+  .mainContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    padding: 0 12%;
+
+    @media @tablet{
+      padding: 0 5%;
+    }
+
+    @media @desktop{
+      flex-direction: row;
+      align-items:center;
+      padding-left: 2%;
+      padding-right: 3%;
+    }
+
+      .mainImg{
+        height:30%;
+        width:auto;
+        margin-top:25px;
+
+        @media @tablet{
+          display: flex;
+          justify-content: center;
+          height: 20%;
+          width: fit-content;
+          margin:0;
+        }
+
+        img{
+          max-width: 100%;
+          margin-top: -3%;
+          margin-left: -8%;
+
+          @media @tablet{
+            height: auto;
+            width: 70%;
+            margin-top: -3%;
+            margin-left: -8%;
+          }//close img tablet
+
+          @media @desktop{
+            width:100%;
+          }//close img desktop
+        }//close img
+      }//close mainImg
+      
+  }//close mainContent
+
+  .textContent{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom: 5%;
+    padding: 7% 0;
+
+    @media @tablet{
+      flex-direction:row;
+      padding:0;
+    }
+
+    @media @desktop{
+      flex-direction:column;
+      height: fit-content;
+    }
+
+    .topContent{
+      @media @tablet{
+        width:50%;
+        padding: 0 5%;
+      }
+
+      @media @desktop{
+        height: 30%;
+        margin-bottom: 5%;
+      }
+    }
+
+    .bottomContent{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media @tablet{
+        width: 50%;
+        padding: 0 3%;
+      }
+
+      @media @desktop{
+        width: 80%;
+      }
+
+      p{
+        text-align: justify;
+
+        @media @desktop{
+          font-size: 2rem;
+          line-height: initial;
+          padding: 2% 0;
+        }
+      }
+    }
+
+    h1{
+      font-family: @headFont;
+      text-align: center;;
+      color:@darkBlue;
+      padding: 0 0 7%;
+
+      @media @tablet{
+        font-size: 4rem;
+      }
+
+      @media @tablet{
+        font-size: 6rem;
+      }
+    }
+
+    .buttonContainer{
+      display:flex;
+      width:fit-content;
+      height:fit-content;
+
+      @media @desktop{
+        margin: 5% 0;
+      }//close desktop buttonContainer 
+
+      button{
+        .baseButton(@bg:@teal, @txtcolor:@darkBlue, @btnwidth:40%,@btnheight:35px);
+        width:fit-content;
+
+        @media @desktop{
+          font-size: 3.0rem;
+        }//close desktop button
+      }//close button
+    }//close button container
+    
+  }
+
+}
+
+footer{
+  display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 1%;
+    background-color: @darkBlue;
+    width:100vw;
+
+    p{
+      color:@white;
+      font-family: @secondFont;
+      font-size:1rem;
+      padding: 6px;
+    }
 }

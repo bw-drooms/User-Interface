@@ -1,11 +1,48 @@
-nav{
-  display:flex;
-  flex-direction: row;
-  justify-content:space-between;
-  align-items:center;
+.headBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #233536;
+  padding:1%;
 
-  img{
-    width:20%;
-    height:auto;
-  }
-}
+  .headImg img{
+    //display:none;
+      display:flex;
+      height:40px;
+
+    @media @tablet{
+      display:flex;
+      height:60px;
+    }
+  }//Closes headImg
+
+  .navBar{
+    padding: 1rem;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0%;
+
+    @media @tablet{
+      width:95vw;
+    }
+
+    nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }//Closes nav
+  
+    a{
+      text-decoration: none;
+      font-size: 2.5rem;
+      padding: 1rem 2rem;
+      color: @teal;
+      font-family: @headFont;
+    }//Closes a
+  }//Closes navBar
+}//Closes headBox
+
+
+
+  

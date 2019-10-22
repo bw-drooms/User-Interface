@@ -1,9 +1,17 @@
-.baseButton(@bg:@darkBlue, @txtcolor:@white, @btnwidth:20%,@btnheight:45px){
+.baseButton(@bg:@teal, @txtcolor:@darkBlue, @btnwidth:20%,@btnheight:40px){
     background-color:@bg;
     color:@txtcolor;
     width:@btnwidth;
     height:@btnheight;
     text-align:center;
-    border-radius:10px;
-    font-size:1.8rem;
+    font-size:1.6rem;
+    font-family:@headFont;
+    border: 0;
+}
+
+.ctr('direction'){
+  display:flex;
+  flex-direction:'direction';
+  align-items:center;
+  justify-content:center;
 }
