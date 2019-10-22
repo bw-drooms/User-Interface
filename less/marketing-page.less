@@ -2,18 +2,50 @@
   background-color:@teal;
 
   .mainContent{
-    flex-direction:column;
-      align-items:center;
-      width:100%;
-      height:fit-content;
-      padding: 0 12%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    padding: 0 12%;
 
-      img{
-        max-width: 100%;
-        margin-top: -3%;
-        margin-left: -8%;
-      }
-  }
+    @media @tablet{
+      padding: 0 5%;
+    }
+
+    @media @desktop{
+      flex-direction: row;
+      align-items:center;
+    }
+
+      .mainImg{
+        height:30%;
+        width:auto;
+        margin-top:25px;
+
+        @media @tablet{
+          display: flex;
+          justify-content: center;
+          height: 20%;
+          width: fit-content;
+          margin:0;
+        }
+
+        img{
+          max-width: 100%;
+          margin-top: -3%;
+          margin-left: -8%;
+
+          @media @tablet{
+            height: auto;
+            width: 70%;
+            margin-top: -3%;
+            margin-left: -8%;
+          }//close img tablet
+        }//close img
+      }//close mainImg
+      
+  }//close mainContent
 
   .textContent{
     width:100%;
@@ -25,11 +57,23 @@
 
     @media @tablet{
       flex-direction:row;
+      padding:0;
+    }
+
+    @media @desktop{
+      flex-direction:column;
+      height:80vh;
     }
 
     .topContent{
       @media @tablet{
-        width:45%;
+        width:50%;
+        padding: 0 5%;
+      }
+
+      @media @desktop{
+        height: 30%;
+        margin-bottom: 5%;
       }
     }
 
@@ -39,11 +83,21 @@
       align-items: center;
 
       @media @tablet{
-        width:55%;
+        width: 50%;
+        padding: 0 3%;
+      }
+
+      @media @desktop{
+        width: 80%;
       }
 
       p{
         text-align: justify;
+
+        @media @desktop{
+          font-size: 2rem;
+          line-height: initial;
+        }
       }
     }
 
@@ -52,6 +106,14 @@
       text-align: center;;
       color:@darkBlue;
       padding: 0 0 7%;
+
+      @media @tablet{
+        font-size: 4rem;
+      }
+
+      @media @tablet{
+        font-size: 6rem;
+      }
     }
 
     .buttonContainer{
@@ -75,6 +137,7 @@ footer{
     align-content: center;
     height: 1%;
     background-color: @darkBlue;
+    width:100vw;
 
     p{
       color:@white;

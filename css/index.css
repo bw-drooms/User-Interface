@@ -135,14 +135,14 @@ html {
 }
 html,
 body {
-  @second Font;
+  font-family: 'Vollkorn', serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  @head Font;
+  font-family: 'Advent Pro', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -169,13 +169,16 @@ hr {
   width: 80%;
   border-color: #233536;
 }
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 .headBox {
   display: flex;
-  flex-direction: 'direction';
   align-items: center;
   justify-content: center;
   background-color: #233536;
-  margin-bottom: 4%;
+  padding-bottom: 1%;
 }
 .headBox .headImg img {
   display: none;
@@ -203,16 +206,50 @@ hr {
   background-color: #0bcbc3;
 }
 .home .mainContent {
+  display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
-  height: fit-content;
+  min-height: 100vh;
+  justify-content: space-evenly;
   padding: 0 12%;
 }
-.home .mainContent img {
+@media (min-width:768px) {
+  .home .mainContent {
+    padding: 0 5%;
+  }
+}
+@media (min-width:1024px) {
+  .home .mainContent {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.home .mainContent .mainImg {
+  height: 30%;
+  width: auto;
+  margin-top: 25px;
+}
+@media (min-width:768px) {
+  .home .mainContent .mainImg {
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    width: fit-content;
+    margin: 0;
+  }
+}
+.home .mainContent .mainImg img {
   max-width: 100%;
   margin-top: -3%;
   margin-left: -8%;
+}
+@media (min-width:768px) {
+  .home .mainContent .mainImg img {
+    height: auto;
+    width: 70%;
+    margin-top: -3%;
+    margin-left: -8%;
+  }
 }
 .home .textContent {
   width: 100%;
@@ -225,11 +262,25 @@ hr {
 @media (min-width:768px) {
   .home .textContent {
     flex-direction: row;
+    padding: 0;
+  }
+}
+@media (min-width:1024px) {
+  .home .textContent {
+    flex-direction: column;
+    height: 80vh;
   }
 }
 @media (min-width:768px) {
   .home .textContent .topContent {
-    width: 45%;
+    width: 50%;
+    padding: 0 5%;
+  }
+}
+@media (min-width:1024px) {
+  .home .textContent .topContent {
+    height: 30%;
+    margin-bottom: 5%;
   }
 }
 .home .textContent .bottomContent {
@@ -239,17 +290,39 @@ hr {
 }
 @media (min-width:768px) {
   .home .textContent .bottomContent {
-    width: 55%;
+    width: 50%;
+    padding: 0 3%;
+  }
+}
+@media (min-width:1024px) {
+  .home .textContent .bottomContent {
+    width: 80%;
   }
 }
 .home .textContent .bottomContent p {
   text-align: justify;
+}
+@media (min-width:1024px) {
+  .home .textContent .bottomContent p {
+    font-size: 2rem;
+    line-height: initial;
+  }
 }
 .home .textContent h1 {
   font-family: 'Advent Pro', sans-serif;
   text-align: center;
   color: #233536;
   padding: 0 0 7%;
+}
+@media (min-width:768px) {
+  .home .textContent h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width:768px) {
+  .home .textContent h1 {
+    font-size: 6rem;
+  }
 }
 .home .textContent .buttonContainer {
   display: flex;
@@ -275,6 +348,7 @@ footer {
   align-content: center;
   height: 1%;
   background-color: #233536;
+  width: 100vw;
 }
 footer p {
   color: #fbffd8;
