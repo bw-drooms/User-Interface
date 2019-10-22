@@ -222,6 +222,29 @@ hr {
   padding-bottom: 5%;
   padding: 7% 0;
 }
+@media (min-width:768px) {
+  .home .textContent {
+    flex-direction: row;
+  }
+}
+@media (min-width:768px) {
+  .home .textContent .topContent {
+    width: 45%;
+  }
+}
+.home .textContent .bottomContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width:768px) {
+  .home .textContent .bottomContent {
+    width: 55%;
+  }
+}
+.home .textContent .bottomContent p {
+  text-align: justify;
+}
 .home .textContent h1 {
   font-family: 'Advent Pro', sans-serif;
   text-align: center;
