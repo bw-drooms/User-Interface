@@ -42,6 +42,10 @@
             margin-top: -3%;
             margin-left: -8%;
           }//close img tablet
+
+          @media @desktop{
+            width:100%;
+          }//close img desktop
         }//close img
       }//close mainImg
       
@@ -62,7 +66,7 @@
 
     @media @desktop{
       flex-direction:column;
-      height:80vh;
+      height: fit-content;
     }
 
     .topContent{
@@ -97,6 +101,7 @@
         @media @desktop{
           font-size: 2rem;
           line-height: initial;
+          padding: 2% 0;
         }
       }
     }
@@ -121,11 +126,19 @@
       width:fit-content;
       height:fit-content;
 
+      @media @desktop{
+        margin: 5% 0;
+      }//close desktop buttonContainer 
+
       button{
-        .baseButton(@bg:@darkBlue, @txtcolor:@white, @btnwidth:40%,@btnheight:35px);
+        .baseButton(@bg:@teal, @txtcolor:@darkBlue, @btnwidth:40%,@btnheight:35px);
         width:fit-content;
-      }
-    }
+
+        @media @desktop{
+          font-size: 3.0rem;
+        }//close desktop button
+      }//close button
+    }//close button container
     
   }
 

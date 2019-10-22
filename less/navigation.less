@@ -7,11 +7,16 @@
 
   .headImg img{
     display:none;
+
+    @media @tablet{
+      display:flex;
+      height:60px;
+    }
   }//Closes headImg
 
   .navBar{
     padding: 1rem;
-    width: 80vw;
+    width: 95vw;
     display: flex;
     justify-content: center;
     padding-bottom: 0%;
@@ -24,10 +29,10 @@
   
     a{
       text-decoration: none;
-    font-size: 2.5rem;
-    padding: 1rem;
-    color: @teal;
-    font-family: @headFont;
+      font-size: 2.5rem;
+      padding: 1rem 2rem;
+      color: @teal;
+      font-family: @headFont;
     }//Closes a
   }//Closes navBar
 }//Closes headBox

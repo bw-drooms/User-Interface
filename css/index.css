@@ -183,9 +183,15 @@ body {
 .headBox .headImg img {
   display: none;
 }
+@media (min-width:768px) {
+  .headBox .headImg img {
+    display: flex;
+    height: 60px;
+  }
+}
 .headBox .navBar {
   padding: 1rem;
-  width: 80vw;
+  width: 95vw;
   display: flex;
   justify-content: center;
   padding-bottom: 0%;
@@ -198,7 +204,7 @@ body {
 .headBox .navBar a {
   text-decoration: none;
   font-size: 2.5rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: #0bcbc3;
   font-family: 'Advent Pro', sans-serif;
 }
@@ -251,6 +257,11 @@ body {
     margin-left: -8%;
   }
 }
+@media (min-width:1024px) {
+  .home .mainContent .mainImg img {
+    width: 100%;
+  }
+}
 .home .textContent {
   width: 100%;
   display: flex;
@@ -268,7 +279,7 @@ body {
 @media (min-width:1024px) {
   .home .textContent {
     flex-direction: column;
-    height: 80vh;
+    height: fit-content;
   }
 }
 @media (min-width:768px) {
@@ -306,6 +317,7 @@ body {
   .home .textContent .bottomContent p {
     font-size: 2rem;
     line-height: initial;
+    padding: 2% 0;
   }
 }
 .home .textContent h1 {
@@ -329,18 +341,26 @@ body {
   width: fit-content;
   height: fit-content;
 }
+@media (min-width:1024px) {
+  .home .textContent .buttonContainer {
+    margin: 5% 0;
+  }
+}
 .home .textContent .buttonContainer button {
-  background-color: #233536;
-  color: #fbffd8;
+  background-color: #0bcbc3;
+  color: #233536;
   width: 40%;
   height: 35px;
   text-align: center;
-  border-radius: 16px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: 'Advent Pro', sans-serif;
-  border-top: 0;
-  border-left: 0;
+  border: 0;
   width: fit-content;
+}
+@media (min-width:1024px) {
+  .home .textContent .buttonContainer button {
+    font-size: 3rem;
+  }
 }
 footer {
   display: flex;
@@ -355,4 +375,45 @@ footer p {
   font-family: 'Vollkorn', serif;
   font-size: 1rem;
   padding: 6px;
+}
+.aboutBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutBottom .aboutBox {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: center;
+  margin-bottom: 5rem;
+  background-color: #233536;
+  color: #0bcbc3;
+  padding: 2rem;
+}
+.aboutBottom .aboutBox hr {
+  border-color: #0bcbc3;
+}
+.aboutBottom .aboutBox .bottomText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+}
+.aboutBottom .aboutBox .bottomText hr {
+  margin-top: -3%;
+}
+.aboutBottom .aboutBox .imgBox {
+  height: fit-content;
+  width: auto;
+  margin-bottom: 1rem;
+}
+.aboutBottom .aboutBox .imgBox img {
+  height: 14rem;
+  border-radius: 50%;
+}
+.aboutBottom .aboutBox p {
+  text-align: center;
+  width: 81%;
+  color: #0bcbc3;
 }
