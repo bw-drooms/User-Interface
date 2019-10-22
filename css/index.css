@@ -213,6 +213,13 @@ body {
   padding: 1rem 2rem;
   color: #0bcbc3;
   font-family: 'Advent Pro', sans-serif;
+  transition-duration: 0.5s;
+}
+.headBox .navBar a:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #fbffd8;
 }
 .home {
   background-color: #0bcbc3;
@@ -364,11 +371,17 @@ body {
   font-family: 'Advent Pro', sans-serif;
   border: 0;
   width: fit-content;
+  transition-duration: 0.5s;
 }
 @media (min-width:1024px) {
   .home .textContent .buttonContainer button {
     font-size: 3rem;
   }
+}
+.home .textContent .buttonContainer button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 footer {
   display: flex;
@@ -421,6 +434,7 @@ footer p {
   color: #0bcbc3;
   padding: 2rem;
   border-radius: 5rem;
+  transition-duration: 0.5s;
 }
 @media (min-width:768px) {
   .aboutBottom .doubleBox .aboutBox {
@@ -493,4 +507,9 @@ footer p {
   .aboutBottom .doubleBox .aboutBox .aboutIcons {
     width: 70%;
   }
+}
+.aboutBox:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }

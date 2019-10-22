@@ -35,6 +35,7 @@
         color:@teal;
         padding: 2rem;
         border-radius: 5rem;
+        transition-duration: 0.5s;
 
         @media @tablet{
           margin: 0 1rem 5rem;
@@ -109,6 +110,10 @@
         }//close aboutIcons
       }//close aboutBox
     }//close doubleBox
-  
-  
 }//close aboutBottom
+
+.aboutBox:hover{
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}

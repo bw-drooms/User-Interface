@@ -135,11 +135,17 @@
       button{
         .baseButton(@bg:@teal, @txtcolor:@darkBlue, @btnwidth:40%,@btnheight:35px);
         width:fit-content;
+        transition-duration: 0.5s;
 
         @media @desktop{
           font-size: 3.0rem;
         }//close desktop button
       }//close button
+       button:hover{
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
+       }
     }//close button container
     
   }
