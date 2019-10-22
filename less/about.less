@@ -1,3 +1,12 @@
+.aboutTop{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: justify;
+  margin-top: 2rem;
+}
+
+
 .aboutBottom{
   display:flex;
   flex-direction:column;
@@ -6,26 +15,15 @@
     .aboutBox{
       display:flex;
       flex-direction:column;
-      width:75%;
       align-items: center;
       margin-bottom: 5rem;
       background-color:@darkBlue;
       color:@teal;
       padding: 2rem;
+      border-radius: 5rem;
 
       hr{
         border-color:@teal;
-      }
-
-      .bottomText{
-        display:flex;
-        flex-direction: column;
-        align-items:center;
-        margin-top: 8%;
-
-        hr{
-          margin-top: -3%
-        }
       }
 
       .imgBox{
@@ -38,10 +36,31 @@
           border-radius: 50%;
         }//close img
       }//close imgBox
+
+      .bottomText{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin-top: 8%;
+
+        hr{
+          margin-top: -3%
+        }
+      }
+
       p{
         text-align: center;
         width: 81%;
         color:@teal;
+      }
+
+      .aboutIcons{
+        width:60%;
+        height:fit-content;
+        display:flex;
+        justify-content: space-around;
+        margin-top: 5%;
+
       }
   }//close aboutBox
 }//close aboutBottom

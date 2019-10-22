@@ -376,6 +376,13 @@ footer p {
   font-size: 1rem;
   padding: 6px;
 }
+.aboutTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin-top: 2rem;
+}
 .aboutBottom {
   display: flex;
   flex-direction: column;
@@ -384,24 +391,15 @@ footer p {
 .aboutBottom .aboutBox {
   display: flex;
   flex-direction: column;
-  width: 75%;
   align-items: center;
   margin-bottom: 5rem;
   background-color: #233536;
   color: #0bcbc3;
   padding: 2rem;
+  border-radius: 5rem;
 }
 .aboutBottom .aboutBox hr {
   border-color: #0bcbc3;
-}
-.aboutBottom .aboutBox .bottomText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 8%;
-}
-.aboutBottom .aboutBox .bottomText hr {
-  margin-top: -3%;
 }
 .aboutBottom .aboutBox .imgBox {
   height: fit-content;
@@ -412,8 +410,24 @@ footer p {
   height: 14rem;
   border-radius: 50%;
 }
+.aboutBottom .aboutBox .bottomText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+}
+.aboutBottom .aboutBox .bottomText hr {
+  margin-top: -3%;
+}
 .aboutBottom .aboutBox p {
   text-align: center;
   width: 81%;
   color: #0bcbc3;
+}
+.aboutBottom .aboutBox .aboutIcons {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
 }
