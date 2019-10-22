@@ -19,11 +19,26 @@
     width:100%;
     display:flex;
     flex-direction:column;
+    align-items: center;
+    padding-bottom: 5%;
+    padding: 7% 0;
 
     h1{
       font-family: @headFont;
       text-align: center;;
       color:@darkBlue;
+      padding: 0 0 7%;
+    }
+
+    .buttonContainer{
+      display:flex;
+      width:fit-content;
+      height:fit-content;
+
+      button{
+        .baseButton(@bg:@darkBlue, @txtcolor:@white, @btnwidth:40%,@btnheight:35px);
+        width:fit-content;
+      }
     }
     
   }
@@ -31,7 +46,16 @@
 }
 
 footer{
-  display:flex;
-  align-content: center;
-  margin:5%;
+  display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 1%;
+    background-color: @darkBlue;
+
+    p{
+      color:@white;
+      font-family: @secondFont;
+      font-size:1rem;
+      padding: 6px;
+    }
 }

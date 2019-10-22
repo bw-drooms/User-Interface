@@ -163,7 +163,7 @@ p {
 }
 .container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 hr {
   width: 80%;
@@ -174,7 +174,7 @@ hr {
   flex-direction: 'direction';
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid #233536;
+  background-color: #233536;
   margin-bottom: 4%;
 }
 .headBox .headImg img {
@@ -196,7 +196,7 @@ hr {
   text-decoration: none;
   font-size: 2.5rem;
   padding: 1rem;
-  color: #233536;
+  color: #0bcbc3;
   font-family: 'Advent Pro', sans-serif;
 }
 .home {
@@ -218,14 +218,44 @@ hr {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+  padding: 7% 0;
 }
 .home .textContent h1 {
   font-family: 'Advent Pro', sans-serif;
   text-align: center;
   color: #233536;
+  padding: 0 0 7%;
+}
+.home .textContent .buttonContainer {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+.home .textContent .buttonContainer button {
+  background-color: #233536;
+  color: #fbffd8;
+  width: 40%;
+  height: 35px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 1.4rem;
+  font-family: 'Advent Pro', sans-serif;
+  border-top: 0;
+  border-left: 0;
+  width: fit-content;
 }
 footer {
   display: flex;
+  justify-content: center;
   align-content: center;
-  margin: 5%;
+  height: 1%;
+  background-color: #233536;
+}
+footer p {
+  color: #fbffd8;
+  font-family: 'Vollkorn', serif;
+  font-size: 1rem;
+  padding: 6px;
 }
