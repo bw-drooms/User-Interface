@@ -216,7 +216,7 @@ body {
   text-decoration: none;
   font-size: 2.5rem;
   padding: 1rem 2rem;
-  color: #0bcbc3;
+  color: #fbffd8;
   font-family: 'Advent Pro', sans-serif;
   transition-duration: 0.5s;
 }
@@ -224,11 +224,10 @@ body {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  color: #fbffd8;
+  color: #0bcbc3;
 }
 .home {
-  background: #0bcbc3;
-  background: linear-gradient(135deg, #0bcbc3 59%, #68f4ed 100%, #00d4ff 100%);
+  background: #fbffd8;
 }
 .home .mainContent {
   display: flex;
@@ -445,7 +444,7 @@ footer p {
   background-color: #233536;
   color: #0bcbc3;
   padding: 2rem;
-  border: 1px solid #0bcbc3;
+  border: 1px solid #fbffd8;
   border-radius: 5rem;
   transition-duration: 0.5s;
 }
@@ -458,7 +457,7 @@ footer p {
 @media (min-width:1070px) {
   .aboutBottom .doubleBox .aboutBox {
     margin: 0;
-    border: 2px solid #0bcbc3;
+    border: 5px solid #fbffd8;
     height: 56em;
   }
 }
@@ -559,4 +558,11 @@ h2 {
 i.fas,
 i.fab {
   color: #fbffd8;
+  transition-duration: 0.5s;
+}
+i.fas,
+i.fab:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }

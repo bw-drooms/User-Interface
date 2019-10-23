@@ -39,7 +39,7 @@
         background-color:@darkBlue;
         color:@teal;
         padding: 2rem;
-        border: 1px solid @teal;
+        border: 1px solid @white;
         border-radius: 5rem;
         transition-duration: 0.5s;
 
@@ -50,7 +50,7 @@
 
         @media @desktop{
           margin: 0;
-          border: 2px solid @teal;
+          border: 5px solid @white;
           height: 56em;
         }
 
@@ -152,7 +152,13 @@ h2{
   text-align: center;
 }
 
-i.fas,
-  i.fab {
+i.fas, i.fab {
     color:@white;
+    transition-duration: 0.5s;
+  }
+
+i.fas, i.fab:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   }
