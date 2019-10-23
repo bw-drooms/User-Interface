@@ -26,6 +26,11 @@
         flex-direction:row;
       }//close tablet doubleBox
 
+      @media @desktop{
+        flex: 0 1 33%;
+        min-height: 60rem;
+      }
+
       .aboutBox{
         display:flex;
         flex-direction:column;
@@ -34,20 +39,33 @@
         background-color:@darkBlue;
         color:@teal;
         padding: 2rem;
+        border: 1px solid @teal;
         border-radius: 5rem;
         transition-duration: 0.5s;
 
         @media @tablet{
           margin: 0 1rem 5rem;
+          width: 50%;
         }//close tablet aboutBox
 
         @media @desktop{
-          margin: 0 1% 0rem;
+          margin: 0;
+          border: 2px solid @teal;
+          height: 56em;
+        }
+
+        @media @desktopTwo{
+          height:52em;
         }
 
         h1{
           text-align: center;
           font-size: 3.5rem;
+          color:@white;
+
+          @media @desktop{
+            font-size: 2.2rem;
+          }
         }
   
         hr{
@@ -61,10 +79,13 @@
   
           img{
             height:14rem;
+            width: 14rem;
+            object-fit:cover;
             border-radius: 50%;
 
             @media @desktop{
               height: 11rem;
+              width: 11rem;
             }
           }//close img
         }//close imgBox
@@ -78,6 +99,11 @@
           @media @tablet{
             margin-top: 3%;
           }//close tablet bottomText
+
+          @media @tablet{
+            flex-grow: 1;
+            justify-content: center;
+          }
   
           hr{
             margin-top: -3%;
@@ -92,6 +118,7 @@
           text-align: center;
           width: 81%;
           color:@teal;
+          font-size:1.5rem;
         }//close p
   
         .aboutIcons{
@@ -113,7 +140,19 @@
 }//close aboutBottom
 
 .aboutBox:hover{
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
+
+  @media @tablet{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  }
 }
+h2{
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+i.fas,
+  i.fab {
+    color:@white;
+  }
