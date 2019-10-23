@@ -180,6 +180,11 @@ body {
   background-color: #233536;
   padding: 1%;
 }
+.headBox .headImg {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
 .headBox .headImg img {
   display: flex;
   height: 40px;
@@ -300,14 +305,14 @@ body {
 }
 @media (min-width:768px) {
   .home .textContent .topContent {
-    width: 50%;
+    width: 60%;
     padding: 0 5%;
   }
 }
 @media (min-width:1070px) {
   .home .textContent .topContent {
     height: 30%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
   }
 }
 .home .textContent .bottomContent {
