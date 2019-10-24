@@ -1,5 +1,5 @@
 .home{
-  background-color:@teal;
+  background:@white;
 
   .mainContent{
     display: flex;
@@ -73,13 +73,13 @@
 
     .topContent{
       @media @tablet{
-        width:50%;
+        width:60%;
         padding: 0 5%;
       }
 
       @media @desktop{
         height: 30%;
-        margin-bottom: 5%;
+        margin-bottom: 1%;
       }
     }
 
@@ -133,13 +133,19 @@
       }//close desktop buttonContainer 
 
       button{
-        .baseButton(@bg:@teal, @txtcolor:@darkBlue, @btnwidth:40%,@btnheight:35px);
+        .baseButton(@bg:transparent, @txtcolor:@darkBlue, @btnwidth:40%,@btnheight:35px);
         width:fit-content;
+        transition-duration: 0.5s;
 
         @media @desktop{
           font-size: 3.0rem;
         }//close desktop button
       }//close button
+       button:hover{
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
+       }
     }//close button container
     
   }

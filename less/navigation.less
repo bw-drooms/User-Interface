@@ -5,6 +5,12 @@
   background-color: #233536;
   padding:1%;
 
+  .headImg{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+  }
+
   .headImg img{
     //display:none;
       display:flex;
@@ -37,9 +43,17 @@
       text-decoration: none;
       font-size: 2.5rem;
       padding: 1rem 2rem;
-      color: @teal;
+      color: @white;
       font-family: @headFont;
+      transition-duration: 0.5s;
     }//Closes a
+
+    a:hover{
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      color:@teal;
+    }
   }//Closes navBar
 }//Closes headBox
 
